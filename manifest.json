@@ -1,0 +1,10 @@
+{
+    "name": "英雄クロニクル強化ツール",
+    "version": "0.1",
+    "description": "英雄クロニクルの機能強化用ツール",
+    "permissions": ["http://suc.au-chronicle.jp/"],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "popup": "popup.html"
+    }
+}
