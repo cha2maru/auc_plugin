@@ -1,0 +1,10 @@
+var options,
+	filtertext,
+	deletetext,
+	postpath,
+	sbbspostpath,
+	bbstimepath,
+	bbsforcepath,
+	bbsrespath,
+	headerpath,
+	idlist;

@@ -1,10 +1,26 @@
 {
     "name": "英雄クロニクル強化ツール",
-    "version": "0.1",
+    "version": "0.5.5",
     "description": "英雄クロニクルの機能強化用ツール",
-    "permissions": ["http://suc.au-chronicle.jp/"],
+    "permissions": [
+    	"http://suc.au-chronicle.jp/",
+    	"contextMenus",
+    	"tabs"
+    ],
+    "options_page": "fancy-settings/source/index.html",
+    "background_page": "html/background.html",
     "browser_action": {
-        "default_icon": "icon.png",
-        "popup": "popup.html"
-    }
+    	"default_icon": "img/favicon-000.png",
+    	"default_title": "AUCTOOL",
+    	"popup": "html/popup.html"
+    },
+    "content_scripts": [
+	    {
+		    "matches": ["http://suc.au-chronicle.jp/web*"],
+		    "js": [
+		    	"fancy-settings/source/lib/jquery-1.6.1.min.js",
+		    	"js/contents_su.js"
+		    ]
+		}
+	]
 }
