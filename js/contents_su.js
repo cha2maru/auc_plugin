@@ -72,7 +72,7 @@ function forceidlinkEvent(event){
 //	console.log("linkevent");
 	var target = event.target.innerText;
 	chrome.extension.sendRequest(
-		{action: 'addFilterId',
+		{action: 'setFilterId',
 		target: target},
 		 function(){});
 }

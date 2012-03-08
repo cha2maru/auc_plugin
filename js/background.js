@@ -9,7 +9,7 @@ function init() {
 		if (request.action == 'gpmeGetOptions') {
 //			changeIcon(settings.get('myFilterPopupButton'));
 			sendResponse(settings.toObject());
-  		} else if(request.action == 'addFilterId'){
+  		} else if(request.action == 'setFilterId'){
 //  			console.log('test');
   			setFilterID(request.target);
   			sendResponse({});
