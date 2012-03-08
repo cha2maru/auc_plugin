@@ -1,10 +1,7 @@
 // SAMPLE
 var idlist = [];
-(function($)
-{
-    var settings = new Store("settings", DEFAULTSETTING);
-	idlist = settings.get("idlist");
-})(jQuery);
+var settings = new Store("settings", DEFAULTSETTING);
+idlist = settings.get("idlist");
 
 this.manifest = {
     "name": "英雄クロニクル強化ツール for success",

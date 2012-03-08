@@ -52,8 +52,10 @@ function onclickAddId(info,tab){
 	var target = info.selectionText;
 	var mystore = new Store("settings");
 	var filterid = mystore.get("filterid");
-	if (filterid != '') {
+	if (filterid != '' || filterid != null) {
 		addId(filterid);	
+	} else {
+		alert("target id is null.");
 	}
 	getSelectTab()
 }

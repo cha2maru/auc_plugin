@@ -18,7 +18,7 @@
 	    {
 		    "matches": ["http://suc.au-chronicle.jp/web*"],
 		    "js": [
-		    	"fancy-settings/source/lib/jquery-1.6.1.min.js",
+		    	"js/jquery-1.6.1.min.js",
 		    	"js/contents_su.js"
 		    ]
 		}
